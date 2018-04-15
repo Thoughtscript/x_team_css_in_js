@@ -2,7 +2,7 @@
 
 X-Team CSS in JS Example: A comparison of *CSS in JS* libraries updated for 2018.
 
-![Popularity](...Popularity.PNG)
+![Popularity](https://github.com/Thoughtscript/x_team_css_in_js/blob/master/Popularity.PNG)
 
 We compare several libraries:
 
@@ -21,7 +21,7 @@ Testing for:
 
 ```
     (1) Phantom.js page load performance
-    (2) Benchmakr.js performance
+    (2) Benchmark.js performance
     (3) Webpack 3.6 compile time
     (4) Webpack 3.6 bundle size
 ```
