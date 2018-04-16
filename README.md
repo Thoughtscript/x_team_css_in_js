@@ -26,6 +26,13 @@ Testing for:
     (4) Webpack 3.6 bundle size
 ```
 
+# Running the Tests
+
+Build Tests:
+```bash
+    $ npm run build-all
+```
+
 # Resources and Tributes
 
 Updating 
@@ -41,5 +48,3 @@ https://benchmarkjs.com/
 http://phantomjs.org/quick-start.html
 
 https://webpack.js.org/
-
-
