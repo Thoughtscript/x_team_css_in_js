@@ -1,7 +1,7 @@
 'use strict'
 
 const opts = {
-  isProd: false,
+  isProd: require('./production.config.js').production,
   reactAppRoot: '../reactApps/cxs',
   outPath: `../public/cxs/built`
 }

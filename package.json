@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "X-Team CSS in JS",
   "scripts": {
+
     "build-aphrodite": "webpack --config webpack-config/webpack.aphrodite.config.js --progress --profile --colors",
     "build-cxs": "webpack --config webpack-config/webpack.cxs.config.js --progress --profile --colors",
     "build-emotion": "webpack --config webpack-config/webpack.emotion.config.js --progress --profile --colors",
@@ -11,7 +12,14 @@
     "build-radium": "webpack --config webpack-config/webpack.radium.config.js --progress --profile --colors",
     "build-styled": "webpack --config webpack-config/webpack.styled.config.js --progress --profile --colors",
     "build-styletron": "webpack --config webpack-config/webpack.styletron.config.js --progress --profile --colors",
-    "build-all": "npm run build-aphrodite && npm run build-cxs && npm run build-emotion && npm run build-glamorous && npm run build-jss && npm run build-radium && npm run build-styled && npm run build-styletron"
+    "build-all": "npm run build-aphrodite && npm run build-cxs && npm run build-emotion && npm run build-glamorous && npm run build-jss && npm run build-radium && npm run build-styled && npm run build-styletron",
+
+    "number-request": "node test-suite/number.requests.test.js",
+    "phantom-page": "phantomjs test-suite/phantom.pageload.test.js",
+    "phantom-io": "phantomjs test-suite/phantom.io.text.js",
+    "test-all": "npm run number-request && npm run phantom-page && npm run phantom-io",
+
+    "launch-pages": "node test-suite/hot.server.js"
   },
   "repository": {
     "type": "git",
@@ -37,34 +45,35 @@
   },
   "homepage": "https://github.com/Thoughtscript/x_team_css_in_js#readme",
   "devDependencies": {
+    "aphrodite": "=2.1.1",
     "autoprefixer": "=7.2.2",
     "babel-core": "=6.26.0",
     "babel-loader": "=7.1.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "=6.24.1",
     "babel-preset-react": "=6.24.1",
     "babel-preset-stage-0": "=6.24.1",
     "css-loader": "=0.28.11",
-    "extract-text-webpack-plugin": "=3.0.2",
-    "file-loader": "=1.1.5",
-    "image-webpack-loader": "=3.4.2",
-    "jest": "=22.4.3",
-    "node-sass": "=4.7.2",
-    "postcss-loader": "=2.0.9",
-    "postcss-smart-import": "=0.7.6",
-    "sass-loader": "=6.0.6",
-    "style-loader": "=0.19.0",
-    "webpack": "=3.6.0",
-    "benchmark": "=2.1.4",
-    "phantom": "=4.0.12",
-    "aphrodite": "=2.1.1",
     "cxs": "=6.2.0",
     "emotion": "=9.1.1",
+    "extract-text-webpack-plugin": "=3.0.2",
+    "file-loader": "=1.1.5",
     "glamor": "=2.20.40",
     "glamorous": "=4.12.3",
+    "image-webpack-loader": "=3.4.2",
+    "jest": "=22.4.3",
     "jss": "=9.8.1",
+    "live-server": "^1.2.0",
+    "node-sass": "=4.7.2",
+    "phantom": "=4.0.12",
+    "postcss-loader": "=2.0.9",
+    "postcss-smart-import": "=0.7.6",
     "radium": "=0.24.0",
+    "sass-loader": "=6.0.6",
+    "style-loader": "=0.19.0",
     "styled-components": "=3.2.5",
-    "styletron": "=3.0.4"
+    "styletron-react": "=4.0.3",
+    "webpack": "=3.6.0"
   },
   "dependencies": {
     "react": "=16.2.0",

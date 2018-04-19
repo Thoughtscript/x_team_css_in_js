@@ -18,12 +18,12 @@ We compare several libraries:
 ```
 
 Testing for:
-
 ```
     (1) Phantom.js page load performance
-    (2) Benchmark.js performance
-    (3) Webpack 3.6 compile time
-    (4) Webpack 3.6 bundle size
+    (2) Phantom.js I/0 performance
+    (3) live-server 'http' request performance - time to complete 1000 requests
+    (4) Webpack 3.6 compile time
+    (5) Webpack 3.6 bundle size
 ```
 
 # Running the Tests
@@ -31,7 +31,57 @@ Testing for:
 Build Tests:
 ```bash
     $ npm run build-all
+    $ npm run number-request
+    $ npm run phantom-page
+    $ npm run phantom-io
 ```
+
+# Results
+
+Let's go over our results!
+
+### Build Time and Bundle Size!
+
+# Unminified (Development):
+
+```
+
+```
+
+**Build Time Winner**:  (ms)
+**Vendor Dependencies Size Winner**:  (KB)
+**App Size Winner**:  (KB)
+**Overall Size Winner**:  (KB)
+
+# Minified (Production):
+
+
+```
+
+```
+
+**Build Time Winner**:  (ms)
+**Vendor Dependencies Size Winner**:  (KB)
+**App Size Winner**:  (KB)
+**Overall Size Winner**:  (KB)
+
+
+### live-server - Time To Complete 1000 Requests
+
+
+
+
+### Phantom.js - Page Load Performance
+
+
+
+
+
+### Phantom.js - I/O Performance
+
+
+
+
 
 # Resources and Tributes
 
