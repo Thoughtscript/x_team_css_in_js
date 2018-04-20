@@ -6,16 +6,14 @@ X-Team CSS in JS Example: A comparison of *CSS in JS* libraries updated for 2018
 
 We compare several libraries:
 
-```
-   Aphrodite
-   CXS
-   Emotion
-   Glamorous
-   JSS
-   Radium
-   Styled-Components
-   Styletron
-```
+<a href="https://www.npmjs.com/package/aphrodite">Aphrodite</a>  
+<a href="https://www.npmjs.com/package/cxs">CXS</a>  
+<a href="https://www.npmjs.com/package/emotion">Emotion</a>  
+<a href="https://www.npmjs.com/package/glamorous">Glamorous</a>  
+<a href="https://www.npmjs.com/package/jss">JSS</a>  
+<a href="https://www.npmjs.com/package/radium">Radium</a>  
+<a href="https://www.npmjs.com/package/styled-components">Styled-Components</a>  
+<a href="https://www.npmjs.com/package/styletron">Styletron</a>  
 
 Testing for:
 ```
@@ -468,7 +466,7 @@ To further quantify overall I/O performance, we'll also test the time to load ea
     </tbody>
 </table>
 
-**The Winner:** CXS (53.2000 avg KB/S)
+**The Winner:** Glamorous (77.7719 avg KB/S)
 
 # Resources and Tributes
 
