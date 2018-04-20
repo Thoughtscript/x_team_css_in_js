@@ -1,5 +1,5 @@
 'use strict'
 
 module.exports = {
-  production: false
+  production: true
 }
