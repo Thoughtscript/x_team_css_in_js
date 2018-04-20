@@ -36,7 +36,7 @@ Build Tests:
     $ npm run phantom-io
 ```
 
-# Unminified (Development):
+## Unminified (Development):
 
 Testing build time for `development`-like scenarios (time to rebuild/recompile on change):
 
@@ -128,12 +128,12 @@ Testing build time for `development`-like scenarios (time to rebuild/recompile o
     </tbody>
 </table>
 
-**Build Time Winner**:  Aphrodite (4879.66 avg ms)
-**Vendor Dependencies Size Winner**: CXS (858 KB)
-**App Size Winner**: CXS (3.94 KB)
-**Overall Size Winner**: CXS (861.94 KB)
+**Build Time Winner**:  Aphrodite (4879.66 avg ms)  
+**Vendor Dependencies Size Winner**: CXS (858 KB)  
+**App Size Winner**: CXS (3.94 KB)  
+**Overall Size Winner**: CXS (861.94 KB)  
 
-# Minified (Production):
+## Minified (Production):
 
 Testing build time and size for `production`-like scenarios:
 
@@ -225,18 +225,12 @@ Testing build time and size for `production`-like scenarios:
     </tbody>
 </table>
 
-**Build Time Winner**: CXS (8366.66 avg ms)
-**Vendor Dependencies Size Winner**: CXS (165 KB)
-**App Size Winner**: Glamorous (1.72 KB)
-**Overall Size Winner**: CXS (166.74 KB)
+**Build Time Winner**: CXS (8366.66 avg ms)  
+**Vendor Dependencies Size Winner**: CXS (165 KB)  
+**App Size Winner**: Glamorous (1.72 KB)  
+**Overall Size Winner**: CXS (166.74 KB)  
 
-<style>
-    table > thead > tr > th { font-weight: 600; }
-    table { margin: 25px; }
-    tr > th { padding: 5px; width: 75px; }
-</style>
-
-### live-server -  Time To Complete 1000 Requests
+## live-server -  Time To Complete 1000 Requests
 
 In this test, we see how well the different frameworks hold-up against each other in high-use scenarios. We want to see how much throughput our server can handle given the choice of a particular *CSS in JS* framework (**Please note that this is a test of server-side performance rather than client page-loading performance**):
 
@@ -284,7 +278,7 @@ In this test, we see how well the different frameworks hold-up against each othe
             <th>2604 ms</th> 
         </tr>
          <tr>
-            <th>JSS</th>2572
+            <th>JSS</th>
             <th>2681 ms</th>
             <th>2585 ms</th>
             <th>2657 ms</th>
@@ -316,7 +310,7 @@ In this test, we see how well the different frameworks hold-up against each othe
 
 **The Winner:** Styled-Components (2491.33 avg ms)
 
-### Phantom.js - Page Load Performance
+## Phantom.js - Page Load Performance
 
 In this test, we'll be testing the time to execute a request and receive a response back from our test server. We want to see how fast we can request, render, and receive a `production` page when equipped with a particular *CSS in JS* framework:
 
@@ -356,7 +350,7 @@ In this test, we'll be testing the time to execute a request and receive a respo
             <th>2917 ms</th>
             <th>2987 ms</th>
         </tr>
-        <tr>2917
+        <tr>
             <th>Glamorous</th>
             <th>2947 ms</th>
             <th>3047 ms</th>
@@ -394,9 +388,9 @@ In this test, we'll be testing the time to execute a request and receive a respo
     </tbody>
 </table>
 
-**The Winner:**  ( avg ms)
+**The Winner:** Radium (2936.33 avg ms)
 
-### Phantom.js - I/O Performance
+## Phantom.js - I/O Performance
 
 To further quantify overall I/O performance, we'll also test the time to load each supplied `index.html` with all `production` assets this time using Phantom.js and combining the results with our previous build size:
 
